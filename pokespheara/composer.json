@@ -1,0 +1,9 @@
+{
+    "name": "esteban/pokespheara",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}

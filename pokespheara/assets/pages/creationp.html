@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokespheara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un post</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+     <video id="background-video" autoplay loop muted playsinline>
+    <source src="/img/background.mp4" type="video/mp4">
+  </video>
+    <header>
+        <div class="header">
+            <div class="pokeball-wrapper"></div>
+            <div class="pokeball"></div>
+            <div class="center-circle"></div>
+            <div class="center-circle-g"></div>
+            <div class="center-circle-w"></div>
+            <button class="hom"><a href="/page dacceuil/index.html"><img  src="/img/home.png" alt="home"></button></a>
+
+            <nav class="burger-menu">
+                <a href="#">Mon compte</a>
+                <a href="#">Messagerie</a>
+                <a href="/page dacceuil/faq.html">FAQ</a>
+                <a href="/page dacceuil/contact.html">Contact</a>
+                <a href="#">|</a>
+                <a href="/conexion/index.html">Conexion</a>
+            </nav>
+
+                  <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="mobile-menu">
+        <button class="close-btn">✕</button>
+        <a href="#">Accueil</a>
+        <a href="/page dacceuil/messagerie.html">Messagerie</a>
+        <a href="/page dacceuil/faq.html">FAQ</a>
+        <a href="/page dacceuil/contact.html">Contact</a>
+        <a href="/conexion/index.html">Connexion</a>
+      </nav>
+        </div>
+    </header>
+
+    <h1 class="titre_creat">Créer un nouveau post</h1>
+
+    <section class="form_content">
+        <form id="postForm" action="traitement.php" method="POST">
+            <input type="text" name="title" id="title" placeholder="Titre" required />
+
+            <div class="toolbar">
+                <button type="button" onclick="format('bold')" title="Gras"><b>A</b></button>
+                <button type="button" onclick="format('italic')" title="Italique"><i>I</i></button>
+                <button type="button" onclick="format('underline')" title="Souligné"><u>U</u></button>
+                <button type="button" onclick="format('strikeThrough')" title="Barré"><s>S</s></button>
+                <button type="button" onclick="insertImage()" title="Image"></button>
+            </div>
+
+            <div id="editor" contenteditable="true"></div>
+
+            <!-- Champ caché pour PHP -->
+            <input type="hidden" name="content" id="hiddenContent" />
+
+            
+            <button type="button" class="preview-btn" onclick="previewContent()">Prévisualiser</button>
+
+           
+            <div id="preview">prévisualisation</div>
+
+           
+            <button type="submit" class="submit-btn">Publier</button>
+        </form>
+    </section>
+
+    <footer>
+    <div class="center-circle-fin"></div>
+        <a href="">Mention legal</a>
+        <a href="">FAQ</a>
+        <a href="">Confidentialité</a>
+        <a href="">Droit auteur</a>
+        <a href="">Règle</a>
+        <a href="">CGU (Conditions générales d’utilisation)</a>
+</footer>
+
+<script src="/javas/createpost.js"></script>
+<script src="/javas/burger.js"></script>
+</body>
+
+</html>

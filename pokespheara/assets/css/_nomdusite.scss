@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    
+    top: 5px;
+    font-size: 150px;
+}
+
+@media screen and (max-width: 1530px) {
+    h1{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    h1{
+        font-size: 60px;
+    }
+}

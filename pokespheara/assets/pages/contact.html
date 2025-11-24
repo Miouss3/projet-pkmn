@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokespheara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   <video id="background-video" autoplay loop muted playsinline>
+    <source src="/img/background.mp4" type="video/mp4">
+  </video>
+<header>
+    <div class="header">
+      <div class="pokeball-wrapper"></div>
+       <div class="pokeball"></div>
+       <div class="center-circle"></div>
+       <div class="center-circle-g"></div>
+       <div class="center-circle-w"></div>
+       <button class="hom"><a href="/page dacceuil/index.html"><img src="/img/home.png" alt="home"></a></button>
+  
+  <nav class="burger-menu">
+    <a href="/page dacceuil/compte.html">Mon compte</a>
+    <a href="#">Messagerie</a>
+    <a href="/page dacceuil/faq.html">FAQ</a>
+    <a href="/page dacceuil/contact.html">Contact</a>
+    <a href="#">|</a>
+    <a href="/conexion/index.html">Conexion</a>
+  </nav>
+        <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="mobile-menu">
+        <button class="close-btn">✕</button>
+        <a href="#">Accueil</a>
+        <a href="/page dacceuil/messagerie.html">Messagerie</a>
+        <a href="/page dacceuil/faq.html">FAQ</a>
+        <a href="/page dacceuil/contact.html">Contact</a>
+        <a href="/conexion/index.html">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="info-contact">
+    <div class="left">
+      <h2>Nous contacter</h2>
+    </div>
+  
+    <form class="right" action="#" method="POST">
+      <input type="text" name="username" placeholder="Nom d'utilisateur" required class="info" />
+      <input type="email" name="email" placeholder="Gmail" required class="info" />
+      <textarea name="message" placeholder="Votre message" required class="ms"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="center-circle-fin"></div>
+        <a href="">Mention legal</a>
+        <a href="">FAQ</a>
+        <a href="">Confidentialité</a>
+        <a href="">Droit auteur</a>
+        <a href="">Règle</a>
+        <a href="">CGU (Conditions générales d’utilisation)</a>
+</footer>
+  
+    <script src="/javas/burger.js"></script>
+</body>
+</html>

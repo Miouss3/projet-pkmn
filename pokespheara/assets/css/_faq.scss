@@ -1,0 +1,50 @@
+.contfaq{
+    width: 70%;
+  margin: 0 auto;
+    h2{
+        margin-top: 80px;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+    
+    details{
+        padding: 15px 20px;
+        cursor: pointer;
+        summary{
+            padding: 5px;
+            font-size: 25px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3px;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contfaq{
+        width: 90%;
+        h2{
+            font-size: 50px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        details{
+            summary{
+                font-size: 20px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,174 @@
+:root {
+  --colorrouge: #ff0000;
+  --colorblanc: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  
+
+  .info_uti {
+    width: 620px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 3px solid var(--colorrouge);
+    border-radius: 10px;
+    background: var(--colorblanc);
+
+    h2 {
+      font-size: 35px;
+      color: black;
+      text-align: center;
+    }
+
+    .stat_uti {
+      p {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    }
+
+    .signiature {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.compt_uti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+
+  .messagerie {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+    border: 3px solid var(--colorrouge);
+    border-radius: 50px;
+    background: var(--colorblanc);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+}
+
+.content_compte {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.utillisateur {
+  width: 300px;
+  border: 3px solid var(--colorrouge);
+  border-radius: 10px;
+  background: var(--colorblanc);
+  padding: 20px;
+  text-align: center;
+
+  img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .bio {
+    border: 2px solid var(--colorrouge);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+
+    h4 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .compt_uti {
+    flex-direction: column;
+    align-items: center;
+
+    .messagerie {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+
+  .content_compte {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .utillisateur {
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
+@media screen and (max-width:762px) {
+  .main_content {
+    .info_uti {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+
+      .stat_uti {
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+    .utillisateur {
+    width: 100%;
+    max-width: 290px;
+  }
+}

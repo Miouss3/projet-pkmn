@@ -1,0 +1,16 @@
+@import "header", "nomdusite", "topactu", "post", "footer", "logo", "search", "ftp", "contact", "faq", "compte", "vodbg", "createpost", "pagepost", "messageri", "page_forum", "creatuser";
+
+:root {
+--colorrouge :  #ff0015;
+--colorgrey :  #dbdbdb;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Jaldi:wght@400;700&display=swap');
+
+body {
+  font-family: "Jaldi", sans-serif;
+   margin: 0;
+   height: 100vh; 
+  }
+  
