@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum Pokémon - <?= $title ?? 'Accueil' ?></title>
+    <title>Pokespheara - <?= $title ?? 'Accueil' ?></title>
     <link rel="stylesheet" href="<?= $url('/assets/css/style.css') ?>">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Forum Pokémon</h1>
+            <h1>Pokespheara</h1>
             <nav>
                 <a href="<?= $url('/') ?>">Accueil</a>
                 <?php if (isset($_SESSION['user_id'])): ?>
